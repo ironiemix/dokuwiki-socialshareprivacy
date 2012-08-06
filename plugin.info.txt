@@ -1,0 +1,7 @@
+base   socialshareprivacy
+author Frank Schiebel
+email  frank@linuxmuster.net
+date   2012-08-10
+name   socialshareprivacy plugin
+desc   Provides two-click buttons for FB, Twitter and G+ as introduced on www.heise.de
+url    http://www.openschulportfolio.de/
