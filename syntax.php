@@ -63,7 +63,7 @@ class syntax_plugin_socialshareprivacy extends DokuWiki_Syntax_Plugin {
     public function render($mode, &$renderer, $data) {
         if($mode != 'xhtml') return false;
 
-        $renderer->doc = '<div id="socialshareprivacy"></div>'. DOKU_LF;
+        $renderer->doc .= '<div id="socialshareprivacy"></div>'. DOKU_LF;
         return true;
     }
 }
