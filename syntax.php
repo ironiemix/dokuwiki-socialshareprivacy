@@ -17,36 +17,45 @@ require_once DOKU_PLUGIN.'syntax.php';
 
 class syntax_plugin_socialshareprivacy extends DokuWiki_Syntax_Plugin {
     public function getType() {
-        return 'FIXME: container|baseonly|formatting|substition|protected|disabled|paragraphs';
+        return 'substition';
     }
 
     public function getPType() {
-        return 'FIXME: normal|block|stack';
+        return 'block';
     }
 
     public function getSort() {
-        return FIXME;
+        return 222;
     }
 
 
     public function connectTo($mode) {
-        $this->Lexer->addSpecialPattern('<FIXME>',$mode,'plugin_socialshareprivacy');
-//        $this->Lexer->addEntryPattern('<FIXME>',$mode,'plugin_socialshareprivacy');
+        $this->Lexer->addSpecialPattern('\{\{socialshareprivacy>.+?\}\}',$mode,'plugin_socialshareprivacy');
     }
 
-//    public function postConnect() {
-//        $this->Lexer->addExitPattern('</FIXME>','plugin_socialshareprivacy');
-//    }
-
     public function handle($match, $state, $pos, &$handler){
-        $data = array();
 
-        return $data;
+        $match = substr($match, 2, -2);
+        list($type, $options) = split('>', $match, 2);
+
+        // load default config options
+        //$flags = $this->getConf('defaults').'&'.$flags;
+
+        $options = split('&', $options);
+
+        foreach($options as $option) {
+            list($name, $value) = split('=', $option);
+            $params[trim($name)] = trim($value);
+        }
+
+    return array($type, $params);
+
     }
 
     public function render($mode, &$renderer, $data) {
         if($mode != 'xhtml') return false;
 
+        $renderer->doc = '<div id="socialshareprivacy"></div>'. DOKU_LF;
         return true;
     }
 }
