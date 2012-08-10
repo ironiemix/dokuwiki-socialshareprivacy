@@ -30,13 +30,21 @@ class syntax_plugin_socialshareprivacy extends DokuWiki_Syntax_Plugin {
 
 
     public function connectTo($mode) {
+        $this->Lexer->addSpecialPattern('\{\{socialshareprivacy\}\}',$mode,'plugin_socialshareprivacy');
         $this->Lexer->addSpecialPattern('\{\{socialshareprivacy>.+?\}\}',$mode,'plugin_socialshareprivacy');
     }
 
     public function handle($match, $state, $pos, &$handler){
 
         $match = substr($match, 2, -2);
-        list($type, $options) = split('>', $match, 2);
+        $pos = strrpos($match, ">");
+        if ( $pos === false ) {
+            $type = "socialshareprivacy";
+            $params = array();
+            return array($type, $params);
+        } else {
+            list($type, $options) = split('>', $match, 2);
+        }
 
         // load default config options
         //$flags = $this->getConf('defaults').'&'.$flags;
