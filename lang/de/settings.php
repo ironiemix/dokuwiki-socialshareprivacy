@@ -1,12 +1,12 @@
 <?php
 /**
- * english language file for socialshareprivacy plugin
+ * german language file for socialshareprivacy plugin
  *
  * @author Frank Schiebel <frank@linuxmuster.net>
  */
 
-// FIXME Obviously needs translation...
-
+// keys need to match the config setting name
+// $lang['fixme'] = 'FIXME';
 // Global settings for socialshareprivacy plugin
 $lang['global_info_link']    = "Link zu detaillierter Datenschutz-Info, Standard ist der zugehörige  heise-Artikel.";
 $lang['global_txt_help']    = "MouseOver-Text des i-Icons";
