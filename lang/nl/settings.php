@@ -7,30 +7,26 @@
  */
 
 // Global settings for socialshareprivacy plugin
-$lang['global_info_link']    = "Link naar gedetailleerde gegevens beschermings informatie, dafeult is het heise-Artikel.";
-$lang['global_txt_help']     = "Mouseover tekst van de I-pictogrammen";
-$lang['global_settings_perma']    = "Kop van het menu Instellingen";
-$lang['global_cookie_expires']    = "De geldigheidsduur van de cookie in dagen";
+$lang['global_info_link']      = "Link naar gedetailleerde gegevens beschermings informatie, default is het heise-Artikel.";
+$lang['global_txt_help']       = "Mouseover tekst van de I-pictogrammen";
+$lang['global_settings_perma'] = "Kop van het menu Instellingen";
+$lang['global_cookie_expires'] = "De geldigheidsduur van de cookie in dagen";
 // Facebook settings for socialshareprivacy plugin
-$lang['facebook_status']    = "Der User hat Facebook zur Auswahl/nicht zur Auswahl";
-$lang['facebook_txt_info']    = "Mouseover tekst van de Facebook Delen knop";
-$lang['facebook_perma_option']    = "Der User hat die Option, sich Facebook mittels Cookie dauerhaft ohne vorherige Aktivierung einblenden zu lassen.";
-$lang['facebook_display_name']    = "Schrijfwijze van de Facebook-dienst in de instellingen";
-$lang['facebook_language']    = "Facebook taal instelling";
-$lang['facebook_action']    = "Beschriftung des Facebook-Buttons: Empfehlen (recommend) oder Gefällt mir (like)";
+$lang['facebook_status']       = "De gebruiker heeft de keuze om Facebook te activeren of niet";
+$lang['facebook_txt_info']     = "Mouseover tekst van de Facebook Delen knop";
+$lang['facebook_perma_option'] = "De gebruiker heeft de optie om Facebook functies permanent te laden via een cookie zonder voorafgaande activering.";
+$lang['facebook_display_name'] = "Schrijfwijze van de Facebook-dienst in de instellingen";
+$lang['facebook_language']     = "Facebook taal instelling";
+$lang['facebook_action']       = "Tekst voor de Facebook knop: Aanbevelen (recommend) of Vind ik leuk (like)";
 // Twitter settings for socialshareprivacy plugin
-$lang['twitter_status']    = "De gebruiker heeft de keuze uit Twitter zur Auswahl/nicht zur Auswahl";
-$lang['twitter_txt_info']    = "Mouseover tekst van de Twitter-knop";
-$lang['twitter_perma_option']    = "Der User hat die Option, sich Twitter mittels Cookie dauerhaft ohne vorherige Aktivierung einblenden zu lassen.";
-$lang['twitter_display_name']    = "Schreibweise des Twitter-Service in den Optionen";
-$lang['twitter_language']    = "Twitter taal instelling (Default: 'en' ja, Tweet klinkt beter als getwitter)";
+$lang['twitter_status']        = "De gebruiker heeft de keuze om Twitter te activeren of niet";
+$lang['twitter_txt_info']      = "Mouseover tekst van de Twitter-knop";
+$lang['twitter_perma_option']  = "De gebruiker heeft de optie om Twitter functies permanent te laden via een cookie zonder voorafgaande activering.";
+$lang['twitter_display_name']  = "Schrijfwijze van de Twitter dienst in de instellingen";
+$lang['twitter_language']      = "Twitter taal instelling (Default: 'en' ja, Tweet klinkt beter als Kwetter)";
 // Google-Plus settings for socialshareprivacy plugin
-$lang['gplus_status']    = "Der User hat Google+ zur Auswahl/nicht zur Auswahl";
-$lang['gplus_txt_info']    = "Mouseover tekst van de Google Plus Share Knop";
-$lang['gplus_perma_option']    = "Der User hat die Option, sich Google+ mittels Cookie dauerhaft ohne vorherige Aktivierung einblenden zu lassen.";
-$lang['gplus_display_name']    = "Schreibweise des GooglePlus-Service in den Optionen";
-$lang['gplus_language']    = "GooglePlus taal instelling";
-
-
-
-//Setup VIM: ex: et ts=4 :
+$lang['gplus_status']          = "De gebruiker heeft de keuze om Google+ te activeren of niet";
+$lang['gplus_txt_info']        = "Mouseover tekst van de Google Plus delen Knop";
+$lang['gplus_perma_option']    = "De gebruiker heeft de optie om Google+ functies permanent te laden via een cookie zonder voorafgaande activering.";
+$lang['gplus_display_name']    = "Schrijfwijze van de GooglePlus dienst in de instellingen";
+$lang['gplus_language']        = "GooglePlus taal instelling";
