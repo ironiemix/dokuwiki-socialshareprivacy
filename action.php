@@ -24,6 +24,8 @@ class action_plugin_socialshareprivacy extends DokuWiki_Action_Plugin {
     }
 
     public function handle_tpl_metaheader_output(Doku_Event &$event, $param) {
+        global $conf;
+
         $options = array(
                 "global_info_link",
                 "global_txt_help",
@@ -60,7 +62,7 @@ class action_plugin_socialshareprivacy extends DokuWiki_Action_Plugin {
         }
 
         $dummyImgPath = DOKU_BASE . "lib/plugins/socialshareprivacy/images/";
-        $dummyFB = $dummyImgPath . "dummy_facebook.png";
+        $dummyFB = $dummyImgPath . str_replace(".png", "_".$conf['lang'] . ".png", "dummy_facebook.png");
         $dummyTWIT = $dummyImgPath . "dummy_twitter.png";
         $dummyGP = $dummyImgPath . "dummy_gplus.png";
 
@@ -90,7 +92,7 @@ class action_plugin_socialshareprivacy extends DokuWiki_Action_Plugin {
         // Output
         $event->data["script"][] = array (
                 "type" => "text/javascript",
-                "charset" => "utf-8",
+                /* not for linked scripts "charset" => "utf-8", */
                 "_data" => "",
                 "src" => DOKU_BASE."lib/plugins/socialshareprivacy/jquery.socialshareprivacy.js"
                 );
