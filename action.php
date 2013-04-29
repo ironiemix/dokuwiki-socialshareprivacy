@@ -20,7 +20,6 @@ class action_plugin_socialshareprivacy extends DokuWiki_Action_Plugin {
     public function register(Doku_Event_Handler &$controller) {
 
        $controller->register_hook('TPL_METAHEADER_OUTPUT', 'BEFORE', $this, 'handle_tpl_metaheader_output');
-   
     }
 
     public function handle_tpl_metaheader_output(Doku_Event &$event, $param) {
@@ -94,7 +93,7 @@ class action_plugin_socialshareprivacy extends DokuWiki_Action_Plugin {
                 "type" => "text/javascript",
                 /* not for linked scripts "charset" => "utf-8", */
                 "_data" => "",
-                "src" => DOKU_BASE."lib/plugins/socialshareprivacy/jquery.socialshareprivacy.js"
+                "src" => DOKU_BASE."lib/plugins/socialshareprivacy/jquery.socialshareprivacy.min.js"
                 );
 
         $event->data["script"][] = array (
