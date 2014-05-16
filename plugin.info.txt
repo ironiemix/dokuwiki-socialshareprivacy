@@ -1,7 +1,7 @@
 base   socialshareprivacy
 author Frank Schiebel
 email  frank@linuxmuster.net
-date   2012-08-10
+date   2013-04-29
 name   socialshareprivacy plugin
 desc   Provides two-click buttons for FB, Twitter and G+ as introduced on www.heise.de. Further information can be found at http://www.heise.de/ct/artikel/2-Klicks-fuer-mehr-Datenschutz-1333879.html
 url    https://www.dokuwiki.org/plugin:socialshareprivacy
