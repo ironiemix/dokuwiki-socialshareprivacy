@@ -91,14 +91,13 @@ class action_plugin_socialshareprivacy extends DokuWiki_Action_Plugin {
         // Output
         $event->data["script"][] = array (
                 "type" => "text/javascript",
-                /* not for linked scripts "charset" => "utf-8", */
+                "charset" => "utf-8",
                 "_data" => "",
                 "src" => DOKU_BASE."lib/plugins/socialshareprivacy/jquery.socialshareprivacy.min.js"
                 );
 
         $event->data["script"][] = array (
-                "type" => "text/javascript",
-                "charset" => "utf-8",
+                "type" => "text/javascript"
                 "_data" => $scriptstring
                 );
 
