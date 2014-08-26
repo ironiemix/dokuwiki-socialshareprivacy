@@ -97,7 +97,7 @@ class action_plugin_socialshareprivacy extends DokuWiki_Action_Plugin {
                 );
 
         $event->data["script"][] = array (
-                "type" => "text/javascript"
+                "type" => "text/javascript",
                 "_data" => $scriptstring
                 );
 
