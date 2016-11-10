@@ -17,12 +17,12 @@ require_once DOKU_PLUGIN.'action.php';
 
 class action_plugin_socialshareprivacy extends DokuWiki_Action_Plugin {
 
-    public function register(Doku_Event_Handler &$controller) {
+    public function register(Doku_Event_Handler $controller) {
 
        $controller->register_hook('TPL_METAHEADER_OUTPUT', 'BEFORE', $this, 'handle_tpl_metaheader_output');
     }
 
-    public function handle_tpl_metaheader_output(Doku_Event &$event, $param) {
+    public function handle_tpl_metaheader_output(Doku_Event $event, $param) {
         global $conf;
 
         $options = array(
