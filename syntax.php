@@ -34,7 +34,7 @@ class syntax_plugin_socialshareprivacy extends DokuWiki_Syntax_Plugin {
         $this->Lexer->addSpecialPattern('\{\{socialshareprivacy>.+?\}\}',$mode,'plugin_socialshareprivacy');
     }
 
-    public function handle($match, $state, $pos, &$handler){
+    public function handle($match, $state, $pos, Doku_Handler $handler){
 
         $match = substr($match, 2, -2);
         $pos = strrpos($match, ">");
@@ -60,7 +60,7 @@ class syntax_plugin_socialshareprivacy extends DokuWiki_Syntax_Plugin {
 
     }
 
-    public function render($mode, &$renderer, $data) {
+    public function render($mode, Doku_Renderer $renderer, $data) {
         if($mode != 'xhtml') return false;
 
         $renderer->doc .= '<div id="socialshareprivacy"></div>'. DOKU_LF;
