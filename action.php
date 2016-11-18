@@ -22,7 +22,7 @@ class action_plugin_socialshareprivacy extends DokuWiki_Action_Plugin {
        $controller->register_hook('TPL_METAHEADER_OUTPUT', 'BEFORE', $this, 'handle_tpl_metaheader_output');
     }
 
-    public function handle_tpl_metaheader_output(Doku_Event &$event, $param) {
+    public function handle_tpl_metaheader_output(Doku_Event $event, $param) {
         global $conf;
 
         $options = array(
